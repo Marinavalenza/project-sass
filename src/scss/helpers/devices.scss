@@ -1,0 +1,26 @@
+//0px a 767px mobile
+//768px a 1023px tablet
+//1024px a 1439px desktop
+//1440px a 1919px desktop large
+//1920px a 2560px large (verso l'inifito e oltre)
+
+$phone: 0px; //s
+$tablet: 768px; //m
+$desktop: 1440px; //l
+$large: 1920px; //xl
+
+@mixin s {
+  @media only screen and (min-width:$phone) and (max-width: #{$tablet - 1}) {
+    @content;
+  }
+}
+@mixin m {
+  @media only screen and (min-width:$tablet) and (max-width: #{$desktop - 1}) {
+    @content;
+  }
+}
+@mixin l {
+  @media only screen and (min-width:$desktop) and (max-width: #{$large - 1}) {
+    @content;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin flexbox() {
+  display: flex;
+}
+@mixin flexboxCenter() {
+  display: flex;
+
+  align-items: center;
+}
+
+@mixin justify-content($value) {
+  justify-content: $value;
+}
