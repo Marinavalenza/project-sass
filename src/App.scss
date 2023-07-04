@@ -1,19 +1,32 @@
-.container {
-  background-color: $colorBackground;
-  @include flexboxCenter();
-  @include justify-content(center);
-  ul {
-    color: $colorText;
-    margin: $marginText;
-    padding: $paddingText;
-  }
-}
+@import "./scss/typography/all.scss";
+@import "./scss/layouts/all.scss";
+@import "./scss/helpers/reset.scss";
 
+// .container {
+//   background-color: $neutralLightGrey;
+//   ul {
+//     @include flexbox();
+//     @include justify-content(space-between);
+//     color: $textPink;
+//     margin: $marginText;
+//     padding: $paddingText;
+//     background-color: colorShade($primary, 0.8);
+//   }
+// }
+.container {
+  width: 100%;
+  position: relative;
+}
+.row {
+  width: 100%;
+
+  display: flex;
+}
 ul {
-  @include flexboxCenter;
+  @include flexbox();
   @include justify-content(space-between);
-  background-color: $colorBackground;
-  color: lightblue;
+  background-color: $neutralLightGrey;
+  color: $textOrange;
   @include s {
     background: red;
   }

@@ -7,15 +7,47 @@ function App() {
   return (
     <>
       <div className="container">
-        <ul>
-          <li>list 1</li>
-          <li>list 2</li>
-        </ul>
+        <div className="row">
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+          <div className="col1">col1</div>
+        </div>
+        <div className="row">
+          <div className="col2">col2</div>
+          <div className="col2">col2</div>
+          <div className="col2">col2</div>
+          <div className="col2">col2</div>
+          <div className="col2">col2</div>
+          <div className="col2">col2</div>
+        </div>
+        <div className="row">
+          <div className="col3">col3</div>
+          <div className="col3">col3</div>
+          <div className="col3">col3</div>
+          <div className="col3">col3</div>
+        </div>
+        <div className="row">
+          <div className="col4">col4</div>
+          <div className="col4">col4</div>
+          <div className="col4">col4</div>
+        </div>
+        <div className="row">
+          <div className="col5">col5</div>
+          <div className="col7">col7</div>
+        </div>
+        <div className="row">
+          <div className="col12">col12</div>
+        </div>
       </div>
-      <ul>
-        <li>list 3</li>
-        <li>list 4</li>
-      </ul>
     </>
   );
 }

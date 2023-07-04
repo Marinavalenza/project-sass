@@ -24,3 +24,8 @@ $large: 1920px; //xl
     @content;
   }
 }
+@mixin xl {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
