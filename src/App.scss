@@ -1,8 +1,7 @@
 @import "./scss/typography/all.scss";
 @import "./scss/layouts/all.scss";
 @import "./scss/helpers/reset.scss";
-
-// .container {
+@import "./scss/layouts/columns.scss"; // .container {
 //   background-color: $neutralLightGrey;
 //   ul {
 //     @include flexbox();
@@ -16,11 +15,20 @@
 .container {
   width: 100%;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .row {
   width: 100%;
-
   display: flex;
+  flex-wrap: wrap;
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+.row-g {
+  display: flex;
+  gap: 10px;
 }
 ul {
   @include flexbox();

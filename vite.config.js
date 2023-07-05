@@ -12,7 +12,8 @@ export default defineConfig({
       @import "src/scss/variables/_margin.scss";
       @import "src/scss/variables/_marginCard.scss";
       @import "src/scss/variables/_padding.scss";
-      @import "src/scss/variables/typography.scss";
+      @import "src/scss/variables/_typography.scss";
+      @import "src/scss/variables/_layout.scss";
       @import "src/scss/helpers/extends.scss";
       @import "src/scss/helpers/mixins.scss";
       @import "src/scss/helpers/devices.scss";

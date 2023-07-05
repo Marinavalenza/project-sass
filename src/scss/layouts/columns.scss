@@ -46,3 +46,213 @@
   width: column(12);
   background-color: blue;
 }
+
+//device s:phone
+@include s {
+  .col-s1 {
+    width: column(1);
+  }
+  .col-s2 {
+    width: column(2);
+    background-color: $textPink;
+  }
+  .col-s3 {
+    width: column(3);
+    background-color: $textPink;
+  }
+  .col-s4 {
+    width: column(4);
+    background-color: $textPink;
+  }
+  .col-s5 {
+    width: column(5);
+    background-color: $textPink;
+  }
+  .col-s6 {
+    width: column(6);
+    background-color: $textPink;
+  }
+  .col-s7 {
+    width: column(7);
+    background-color: $textPink;
+  }
+  .col-s8 {
+    width: column(8);
+    background-color: $textPink;
+  }
+  .col-s9 {
+    width: column(9);
+    background-color: $textPink;
+  }
+  .col-s10 {
+    width: column(10);
+    background-color: $textPink;
+  }
+  .col-s11 {
+    width: column(11);
+    background-color: $textPink;
+  }
+  .col-s12 {
+    width: column(12);
+    background-color: $textPink;
+  }
+}
+//device m:tablet
+@include m {
+  .col-m1 {
+    width: column(1);
+    background-color: $textOrange;
+  }
+  .col-m2 {
+    width: column(2);
+    background-color: $textOrange;
+  }
+  .col-m3 {
+    width: column(3);
+    background-color: $textOrange;
+  }
+  .col-m4 {
+    width: column(4);
+    background-color: $textOrange;
+  }
+  .col-m5 {
+    width: column(5);
+    background-color: $textOrange;
+  }
+  .col-m6 {
+    width: column(6);
+    background-color: $textOrange;
+  }
+  .col-m7 {
+    width: column(7);
+    background-color: $textOrange;
+  }
+  .col-m8 {
+    width: column(8);
+    background-color: $textOrange;
+  }
+  .col-m9 {
+    width: column(9);
+    background-color: $textOrange;
+  }
+  .col-m10 {
+    width: column(10);
+    background-color: $textOrange;
+  }
+  .col-m11 {
+    width: column(11);
+    background-color: $textOrange;
+  }
+  .col-m12 {
+    width: column(12);
+    background-color: $textOrange;
+  }
+}
+//device l:desktop
+@include l {
+  .col-l1 {
+    width: column(1);
+    background-color: $textYellow;
+  }
+  .col-l2 {
+    width: column(2);
+    background-color: $textYellow;
+  }
+  .col-l3 {
+    width: column(3);
+    background-color: $textYellow;
+  }
+  .col-l4 {
+    width: column(4);
+    background-color: $textYellow;
+  }
+  .col-l5 {
+    width: column(5);
+    background-color: $textYellow;
+  }
+  .col-l6 {
+    width: column(6);
+    background-color: $textYellow;
+  }
+  .col-l7 {
+    width: column(7);
+    background-color: $textYellow;
+  }
+  .col-l8 {
+    width: column(8);
+    background-color: $textYellow;
+  }
+  .col-l9 {
+    width: column(9);
+    background-color: $textYellow;
+  }
+  .col-l10 {
+    width: column(10);
+    background-color: $textYellow;
+  }
+  .col-l11 {
+    width: column(11);
+    background-color: $textYellow;
+  }
+  .col-l12 {
+    width: column(12);
+    background-color: $textYellow;
+  }
+}
+// device xl: da desktop a verso l'infinito
+@include xl {
+  .col-xl1 {
+    width: column(1);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl2 {
+    width: column(2);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl3 {
+    width: column(3);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl4 {
+    width: column(4);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl5 {
+    width: column(5);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl6 {
+    width: column(6);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl7 {
+    width: column(7);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl8 {
+    width: column(8);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl9 {
+    width: column(9);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl10 {
+    width: column(10);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl11 {
+    width: column(11);
+    background-color: $neutralLightGrey;
+  }
+  .col-xl12 {
+    width: column(12);
+    background-color: $neutralLightGrey;
+  }
+}
+
+$gutter: 16px;
+// column gutter
+.col-g1 {
+  width: calc(column(1) - $gutter/2);
+}

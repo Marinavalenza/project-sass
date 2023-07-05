@@ -1,3 +1,13 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin max-width($width) {
+  max-width: $width;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @mixin flexbox() {
   display: flex;
 }
@@ -9,4 +19,31 @@
 
 @mixin justify-content($value) {
   justify-content: $value;
+}
+@mixin align-items($value) {
+  align-items: $value;
+}
+@mixin buttonFill($theme) {
+  @if ($theme == "outline") {
+    background-color: $textOrange;
+    border-color: $textOrange;
+    color: $neutralLight;
+  } @else {
+    background-color: $neutralLightGrey;
+    border-color: $neutralLightGrey;
+    color: $neutralLight;
+  }
+}
+
+@mixin buttonSize($size) {
+  @if $size == "xl" {
+    padding: rem(50px) rem(50px);
+    // font-size: rem($buttonXl);
+  } @else if $size == "sm" {
+    padding: rem(50px) rem(50px);
+    // font-size: rem($buttonSm);
+  } @else {
+    padding: rem(50px) rem(50px);
+    // font-size: rem($buttonMd);
+  }
 }
