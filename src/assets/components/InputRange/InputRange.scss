@@ -1,0 +1,16 @@
+.InputRange {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input[type="range"] {
+    overflow: hidden;
+    display: flex;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
+.Carbohydrate input {
+  color: red;
+}
