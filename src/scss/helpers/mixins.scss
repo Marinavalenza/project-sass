@@ -13,6 +13,7 @@
 }
 @mixin flexboxCenter() {
   display: flex;
+  justify-content: center;
 
   align-items: center;
 }

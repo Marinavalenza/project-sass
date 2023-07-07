@@ -4,15 +4,22 @@ import { useState } from "react";
 import "./App.css";
 import "./App.scss";
 import InputRange from "./assets/components/InputRange";
+import InputCheckbox from "./assets/components/InputCheckbox";
 
 const App = () => {
   return (
-    <div className="InputRange">
-      <InputRange />
-    </div>
+    <>
+      <div className="InputRange">
+        <InputRange />
+      </div>
+      <InputCheckbox />
+    </>
   );
 };
 export default App;
+
+//checkbox
+
 // function App() {
 
 //   // const [isButtonXl, setIsButtonXl] = useState(false);
